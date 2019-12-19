@@ -37,12 +37,19 @@ a,
   font-style: italic;
 }
 
-.logo {
-  background: url(../img/logo.svg) no-repeat;
+.logo_icon {
+  background: url(../img/logo_icon.svg) no-repeat;
   text-indent: -9999px;
   width: 24px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.logo {
+  background: url(../img/logo.png) no-repeat;
+  text-indent: -9999px;
+  width: 140px;
+  height: 45px;
 }
 
 .wrapper {
@@ -66,7 +73,7 @@ a,
 }
 
 .hide {
-  display: none!important;
+  display: none !important;
 }
 
 #sidebarCollapse {
@@ -96,8 +103,9 @@ a,
 
 #sidebar ul li a {
   text-align: left;
-  color: inherit!important;
+  color: inherit !important;
 }
+
 #sidebar.active ul li a {
   padding: 20px 10px;
   text-align: center;
@@ -134,7 +142,7 @@ a,
 }
 
 #sidebar ul.components {
-  padding: 20px 0;  
+  padding: 20px 0;
 }
 
 #sidebar ul li a {
@@ -153,7 +161,7 @@ a,
   font-size: 1.25em;
 }
 
-#sidebar ul ul a.active{
+#sidebar ul ul a.active {
   color: #fff !important;
   background: #2DADC4;
 }
@@ -163,13 +171,13 @@ a[data-toggle="collapse"] {
 }
 
 .dropdown-toggle::after {
-  display: none!important;
+  display: none !important;
   position: absolute;
 }
 
 ul ul a {
   font-size: 0.9em !important;
-  padding-left: 30px !important;  
+  padding-left: 30px !important;
 }
 
 .dropdown-toggle::before {
@@ -206,13 +214,47 @@ a.article:hover {
   color: #fff !important;
 }
 
-/* ---------------------------------------------------
-  CONTENT STYLE
------------------------------------------------------ */
-
 #content {
   width: 100%;
   padding: 20px;
   min-height: 100vh;
   transition: all 0.3s;
+}
+
+.bg {
+  background: url(../img/bg.jpg) no-repeat !important;
+  background-size: cover !important;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.login .card {
+  background: #ffffffed;
+  border: none;
+  width: 370px;
+}
+
+.login .card-body {
+  padding: 2rem;
+}
+
+.login .form-control {
+  border: none;
+  font-size: 1rem !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #177490 !important;
+  background-color: #177490 !important;
+}
+
+.align-sub {
+  vertical-align: sub;
 }
