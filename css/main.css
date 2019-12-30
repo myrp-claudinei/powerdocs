@@ -3,9 +3,9 @@
 
 html,
 body {
-  background: #E3E3E3 !important;
   font-family: 'Open Sans', sans-serif !important;
   color: #2C2C2C !important;
+  height: 100%;
 }
 
 /* h1,
@@ -35,6 +35,7 @@ a,
 .breadcrumb {
   background: none !important;
   font-style: italic;
+  margin: 0 !important;
 }
 
 .logo_icon {
@@ -55,12 +56,13 @@ a,
 .wrapper {
   display: flex;
   align-items: stretch;
+  height: inherit;
 }
 
 #sidebar {
   min-width: 213px;
   max-width: 213px;
-  background: #2C2C2C;
+  background: #2E3D45;
   color: #D3D3D3;
   transition: all 0.3s;
   position: relative;
@@ -230,23 +232,31 @@ a.article:hover {
 }
 
 .login .card {
-  background: #ffffffed;
+  background: #ffffff;
   border: none;
   width: 370px;
+  border: 1px solid #dedede;
 }
 
 .login .card-body {
   padding: 2rem;
 }
 
+input,
+input:active,
 .login .form-control {
-  border: none;
+  border: none !important;
   font-size: 1rem !important;
+  background-color: #f5f5f5 !important;
 }
 
-.form-control:focus {
+input:focus,
+input:active,
+.form-control:focus,
+.form-control:active {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+  background: #ffffff !important;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -257,4 +267,33 @@ a.article:hover {
 
 .align-sub {
   vertical-align: sub;
+}
+
+.fixed-bottom {
+  position: absolute !important;
+}
+
+.filter {
+  width: 30rem;
+}
+
+.filter a {
+  right: 35px;
+  top: 7px;
+}
+
+.filter i {
+  right: 10px;
+  top: 11px;
+}
+
+.table thead {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
+  border-bottom: none!important;
+}
+
+.table thead th {
+  border: none!important;
+  text-transform: uppercase;
 }

@@ -85,19 +85,47 @@
                     </ul>
                 </li>
             </ul>
+            <div class="navbar navbar-expand-lg fixed-bottom">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#"><i class="la la-headset"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="la la-info"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <!-- Page Content  -->
         <div class="container-fluid">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Link</a></li>
-                    <li class="breadcrumb-item"><a href="#">Link 2</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Link 3</li>
-                </ol>
-            </nav>
+            <header class="d-flex justify-content-between">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Link</a></li>
+                        <li class="breadcrumb-item"><a href="#">Link 2</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Link 3</li>
+                    </ol>
+                </nav>
+                <div>
+                    <a href=""><i class="las la-bell"></i></a>
+                    <a href=""><i class="las la-user"></i></a>
+                    <a href=""><i class="las la-cog"></i></a>
+                    
+                </div>
+            </header>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Exibindo 7 de 50 notas fiscais</h5>
+                    <h5 class="card-title float-left">Exibindo 7 de 50 notas fiscais</h5>
+                    <form>
+                        <div class="form-group float-right filter position-relative">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Procure pela chave do documento...">
+                            <a class="position-absolute" href="#">filtros avançados</a>
+                            <i class="la la-search position-absolute"></i>
+
+                        </div>
+                    </form>
+
                     <table class="table">
                         <thead>
                             <tr>
