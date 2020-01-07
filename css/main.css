@@ -57,6 +57,7 @@ a,
   display: flex;
   align-items: stretch;
   height: inherit;
+  background: #F3F3F3;
 }
 
 #sidebar {
