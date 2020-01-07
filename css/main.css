@@ -243,6 +243,17 @@ a.article:hover {
   padding: 2rem;
 }
 
+::-webkit-input-placeholder {
+  font-size: 13px!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+     font-size: 13px!important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+     font-size: 13px!important;
+}
+
 input,
 input:active,
 .login .form-control {
@@ -288,13 +299,32 @@ input:active,
   top: 11px;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .table thead {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2) !important;
-  border-bottom: none!important;
+  border-bottom: none !important;
+}
+
+th {
+  background: #ffffff;
 }
 
 .table thead th {
-  border: none!important;
+  border: none !important;
   text-transform: uppercase;
+}
+
+.table-fixed {
+  overflow-y: auto;
+  height: 100px;
+}
+
+.table-fixed thead th {
+  position: sticky;
+  top: 0;
 }
