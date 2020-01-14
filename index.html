@@ -116,11 +116,103 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title float-left">Exibindo 7 de 50 notas fiscais</h5>
+                    <div class="dropdown show">
+                        <a class="dropdown-toggle position-absolute advanced-filter" href="#" role="button"
+                            id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            filtros avançados
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right card-body shadow" aria-labelledby="dropdownSearch">
+                            <h4 class="card-title">Filtros avançados</h4>
+
+                            <form>
+
+                                <p class="card-subtitle mb-2 mt-3 text-muted">Emissor</p>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputEmail4">CNPJ ou nome do emissor</label>
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="CNPJ ou nome do emissor">
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label for="inputPassword4">Série</label>
+                                        <input type="password" class="form-control" id="inputPassword4"
+                                            placeholder="Série">
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <label for="inputPassword4">Nº</label>
+                                        <input type="password" class="form-control" id="inputPassword4"
+                                            placeholder="Nº">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputState">Tipo de NF-e</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Selecionar...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputState">Status</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Selecionar...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputState">Período</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Selecionar...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="card-subtitle mb-2 mt-3 text-muted">Destinatário</p>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Nome</label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Nome">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">CPF/CNPJ</label>
+                                                <input type="password" class="form-control" id="inputPassword4"
+                                                    placeholder="CPF/CNPJ">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <p class="card-subtitle mb-2 mt-3 text-muted">Transportador</p>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">CNPJ</label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="CNPJ">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Placa</label>
+                                                <input type="password" class="form-control" id="inputPassword4"
+                                                    placeholder="Placa">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                                    <button type="submit" class="btn btn-light">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                     <form>
                         <div class="form-group float-right filter position-relative">
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Procure pela chave do documento...">
-                            <a class="position-absolute" href="#">filtros avançados</a>
                             <i class="la la-search position-absolute"></i>
 
                         </div>
@@ -137,9 +229,14 @@
                                             <label class="custom-control-label" for="customCheck"></label>
                                         </div>
                                     </th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Série</th>
+                                    <th scope="col">Número</th>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Emissor</th>
+                                    <th scope="col">Destinatário</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -151,77 +248,70 @@
                                             <label class="custom-control-label" for="customCheck"></label>
                                         </div>
                                     </th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2"
-                                                name="example1">
-                                            <label class="custom-control-label" for="customCheck2"></label>
+                                    <td>1</td>
+                                    <td>819</td>
+                                    <td>00/00/0000</td>
+                                    <td>Carrefour Com. E Ind. LTDA</td>
+                                    <td>Tiago Seminotti</td>
+                                    <td><strong>R$ 16,65</strong></td>
+                                    <td><span class="badge badge-pill badge-success">Autorizado</span></td>
+                                    <td>
+                                        <div class="dropdown show">
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="las la-ellipsis-v"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
                                         </div>
-                                    </th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck3"
-                                                name="example1">
-                                            <label class="custom-control-label" for="customCheck3"></label>
-                                        </div>
-                                    </th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </div>
 
-            <h2>Botões</h2>
-            <div class="card">
-                <div class="card-body">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-light">Light</button>
-                    <button type="button" class="btn btn-dark">Dark</button>
+                <!-- <h2>Botões</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
 
-                    <button type="button" class="btn btn-link">Link</button>
+                        <button type="button" class="btn btn-link">Link</button>
 
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary">Left</button>
+                            <button type="button" class="btn btn-secondary">Middle</button>
+                            <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <h2>Cards</h2>
-            <div class="card">
-                <div class="card-body">
-                    This is some text within a card body.
-                </div>
+                <h2>Cards</h2>
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div> -->
             </div>
         </div>
-    </div>
 
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

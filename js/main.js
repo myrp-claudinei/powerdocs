@@ -12,3 +12,11 @@ $('ul ul a').click( function(){
         $(this).addClass('active');    
     }
 });
+
+$('.table-fixed').mouseenter( function(){
+    $('.table-fixed thead th').addClass('shdw');
+});
+
+$('.table-fixed').mouseleave( function(){
+    $('.table-fixed thead th').removeClass('shdw');
+});
