@@ -301,6 +301,7 @@ table {
 
 .table-fixed {
   height: 500px;
+  margin-bottom: 20px;
   overflow-y: auto;
   width: 100%
 }
@@ -365,4 +366,9 @@ ul.CTAs {
 
 .dropdown-toggle::before {
   display: none
+}
+
+.page-item.active .page-link {
+  background-color: #2FB9D0 !important;
+  border-color: #2FB9D0 !important
 }
