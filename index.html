@@ -258,27 +258,373 @@
                                     <td><span class="badge badge-pill badge-success">Autorizado</span></td>
                                     <td>
                                         <div class="dropdown show">
-                                            <a class="dropdown-toggle shadow" href="#" role="button" id="dropdownMenuLink"
+                                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <i class="las la-ellipsis-v"></i>
                                             </a>
 
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-menu shadow" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" data-toggle="modal"
+                                                    data-target=".bd-example-modal-lg">Visualizar</a>
+                                                <a class="dropdown-item" href="#">Inutilizar</a>
+                                                <a class="dropdown-item" href="#">Ver ocorrências</a>
                                             </div>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="modal-title d-inline" id="myLargeModalLabel">Carrefour
+                                                        Com. E Ind.
+                                                        LTDA</h4>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <label class="text-secondary"><small>Tipo</small></label>
+                                                    <p>Entrada</p>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <label class="text-secondary"><small>Número</small></label>
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <label class="text-secondary"><small>Chave de acesso da
+                                                            NF-e</small></label>
+                                                    <p>24191133014556185110550010000000021149432546</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="text-secondary"><small>Valor total da
+                                                            nota</small></label>
+                                                    <p><strong>R$ 0.000.000,00</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="accordion">
+                                            <div class="card">
+                                                <div class="card-header" id="headingOne">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link" data-toggle="collapse"
+                                                            data-target="#collapseOne" aria-expanded="true"
+                                                            aria-controls="collapseOne">
+                                                            Emitente
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <label class="text-secondary"><small>Nome/Razão
+                                                                            social</small></label>
+                                                                    <p>Carrefour
+                                                                        Com. E Ind.
+                                                                        LTDA</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>Município</small></label>
+                                                                    <p>Currais Novos</p>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <label
+                                                                        class="text-secondary"><small>UF</small></label>
+                                                                    <p>RN</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>Endereço</small></label>
+                                                                    <p>PC CRISTO REI, 18</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>Bairro</small></label>
+                                                                    <p>Centro</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>Telefone</small></label>
+                                                                    <p>+5547999999999</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <label class="text-secondary"><small>Inscrição
+                                                                            estadual</small></label>
+                                                                    <p>205315216</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label class="text-secondary"><small>Insc. est. do
+                                                                            subst.</small></label>
+                                                                    <p>123456</p>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <label
+                                                                        class="text-secondary"><small>CNPJ</small></label>
+                                                                    <p>33.014.556/1851-10</p>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label class="text-secondary"><small>Natureza de
+                                                                            op.</small></label>
+                                                                    <p class="text-truncate">Outra ent. merc. prest.
+                                                                        serv. não especificada</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingTwo">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseTwo" aria-expanded="false"
+                                                            aria-controls="collapseTwo">
+                                                            Destinatário/Remetente
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <label class="text-secondary"><small>Nome/Razão social</small></label>
+                                                                    <p>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>CNPJ/CPF/Id. Estrangeiro</small></label>
+                                                                    <p>33.014.556/1851-10</p>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <label
+                                                                        class="text-secondary"><small>Indicador da Insc. estadual</small></label>
+                                                                    <p>Contribuinte ICMS</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>Data da emissão</small></label>
+                                                                    <p>29/11/2019</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label
+                                                                        class="text-secondary"><small>Data da entrada/saída</small></label>
+                                                                    <p>29/11/2019</p>
+                                                                </div>                                                                
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <label class="text-secondary"><small>Inscrição
+                                                                            estadual</small></label>
+                                                                    <p>205315216</p>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label class="text-secondary"><small>Insc. est. do
+                                                                            subst.</small></label>
+                                                                    <p>123456</p>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <label
+                                                                        class="text-secondary"><small>CNPJ</small></label>
+                                                                    <p>33.014.556/1851-10</p>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label class="text-secondary"><small>Natureza de
+                                                                            op.</small></label>
+                                                                    <p class="text-truncate">Outra ent. merc. prest.
+                                                                        serv. não especificada</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingThree">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseThree" aria-expanded="false"
+                                                            aria-controls="collapseThree">
+                                                            Transportador/Volumes transportados
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingFour">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseFour" aria-expanded="false"
+                                                            aria-controls="collapseFour">
+                                                            Dados do produto
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingFive">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseFive" aria-expanded="false"
+                                                            aria-controls="collapseFive">
+                                                            Cálculo do ISSQN
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingSix">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseSix" aria-expanded="false"
+                                                            aria-controls="collapseSix">
+                                                            Pessoas autorizadas para o download do XML da NF-e
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingSeven">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseSeven" aria-expanded="false"
+                                                            aria-controls="collapseSeven">
+                                                            Dados adicionais
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" id="headingEight">
+                                                    <h5 class="mb-0">
+                                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                            data-target="#collapseEight" aria-expanded="false"
+                                                            aria-controls="collapseEight">
+                                                            Outras informações
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                                    data-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                        non cupidatat skateboard dolor brunch. Food truck quinoa
+                                                        nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                                                        put a bird on it squid single-origin coffee nulla assumenda
+                                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                                        wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                                        excepteur butcher vice lomo. Leggings occaecat craft beer
+                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                                        haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group col-md-3 d-inline-block">
                         <select class="form-control" id="exampleFormControlSelect1">
-                            <option>10 itens por página</option>                            
-                            <option>50 itens por página</option>                            
-                            <option>100 itens por página</option>                            
+                            <option>10 itens por página</option>
+                            <option>50 itens por página</option>
+                            <option>100 itens por página</option>
                         </select>
                     </div>
                     <nav class="d-inline-block float-right" aria-label="Page navigation example">

@@ -20,3 +20,7 @@ $('.table-fixed').mouseenter( function(){
 $('.table-fixed').mouseleave( function(){
     $('.table-fixed thead th').removeClass('shdw');
 });
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
