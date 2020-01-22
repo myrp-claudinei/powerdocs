@@ -241,7 +241,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                                <tr data-toggle="tooltip" data-placement="bottom"
+                                    title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
                                     <th scope="row">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck"
@@ -265,17 +266,18 @@
 
                                             <div class="dropdown-menu shadow" aria-labelledby="dropdownMenuLink">
                                                 <a class="dropdown-item" data-toggle="modal"
-                                                    data-target=".bd-example-modal-lg">Visualizar</a>
+                                                    data-target=".detalhe-nota">Visualizar</a>
                                                 <a class="dropdown-item" href="#">Inutilizar</a>
-                                                <a class="dropdown-item" href="#">Ver ocorrências</a>
+                                                <a class="dropdown-item" data-toggle="modal" data-target=".ocorrencias"
+                                                    href="#">Ver ocorrências</a>
                                             </div>
                                         </div>
                                     </td>
-                                </tr >                                
+                                </tr>
                             </tbody>
                         </table>
 
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                        <div class="modal fade detalhe-nota" tabindex="-1" role="dialog"
                             aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-xl">
                                 <div class="modal-content">
@@ -481,29 +483,35 @@
                                                                     <p>NOME DA RAZÃO SOCIAL</p>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label class="text-secondary"><small>CNPJ/CPF</small></label>
+                                                                    <label
+                                                                        class="text-secondary"><small>CNPJ/CPF</small></label>
                                                                     <p>33.014.556/1851-10</p>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label class="text-secondary"><small>Frete por conta</small></label>
+                                                                    <label class="text-secondary"><small>Frete por
+                                                                            conta</small></label>
                                                                     <p>Sem frete</p>
                                                                 </div>
                                                                 <div class="col-md-2">
-                                                                    <label class="text-secondary"><small>Código ANTT</small></label>
+                                                                    <label class="text-secondary"><small>Código
+                                                                            ANTT</small></label>
                                                                     <p>000000</p>
                                                                 </div>
                                                                 <div class="col-md-2">
-                                                                    <label class="text-secondary"><small>Placa do veículo</small></label>
+                                                                    <label class="text-secondary"><small>Placa do
+                                                                            veículo</small></label>
                                                                     <p>AAA-0000</p>
                                                                 </div>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-3">
-                                                                    <label class="text-secondary"><small>Endereço</small></label>
+                                                                    <label
+                                                                        class="text-secondary"><small>Endereço</small></label>
                                                                     <p>PC CRISTO REI, 18</p>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label class="text-secondary"><small>Município</small></label>
+                                                                    <label
+                                                                        class="text-secondary"><small>Município</small></label>
                                                                     <p>Currais Novos</p>
                                                                 </div>
                                                                 <div class="col-md-3">
@@ -512,8 +520,8 @@
                                                                     <p>RN</p>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label
-                                                                        class="text-secondary"><small>Inscrição estadual</small></label>
+                                                                    <label class="text-secondary"><small>Inscrição
+                                                                            estadual</small></label>
                                                                     <p>000000000</p>
                                                                 </div>
                                                                 <div class="col-md-3">
@@ -537,15 +545,15 @@
                                                                     <p>500</p>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label
-                                                                        class="text-secondary"><small>Peso bruto</small></label>
+                                                                    <label class="text-secondary"><small>Peso
+                                                                            bruto</small></label>
                                                                     <p>500</p>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <label
-                                                                        class="text-secondary"><small>Peso líquido</small></label>
+                                                                    <label class="text-secondary"><small>Peso
+                                                                            líquido</small></label>
                                                                     <p>500</p>
-                                                                </div>                                                                
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -679,6 +687,92 @@
                                                         farm-to-table, raw denim aesthetic synth nesciunt you probably
                                                         haven't heard of them accusamus labore sustainable VHS.
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade ocorrencias" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="modal-title d-inline" id="myLargeModalLabel">Ocorrências
+                                                        da NF-e</h4>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label class="text-secondary"><small>Número da
+                                                                    NF-e</small></label>
+                                                            <p>2</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label class="text-secondary"><small>Série</small></label>
+                                                            <p>1</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label
+                                                                class="text-secondary"><small>Emitente</small></label>
+                                                            <p>Inventti</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label
+                                                                class="text-secondary"><small>Destinatário</small></label>
+                                                            <p>Otto</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="timeline">
+                                                        <li class="border rounded p-3">
+                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <h6>Rejeitada</h6>
+                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <a href="#" class="text-warning float-right">INUTILIZAR</a>
+                                                        </li>                                
+                                                        <li class="border rounded p-3">
+                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <h6>Rejeitada</h6>
+                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <a href="#" class="text-warning float-right">INUTILIZAR</a>
+                                                        </li>                                
+                                                        <li class="border rounded p-3">
+                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <h6>Rejeitada</h6>
+                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <a href="#" class="text-warning float-right">INUTILIZAR</a>
+                                                        </li>                                
+                                                        <li class="border rounded p-3">
+                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <h6>Rejeitada</h6>
+                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <a href="#" class="text-warning float-right">INUTILIZAR</a>
+                                                        </li>                                
+                                                        <li class="border rounded p-3">
+                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <h6>Rejeitada</h6>
+                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <a href="#" class="text-warning float-right">INUTILIZAR</a>
+                                                        </li>                                
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>

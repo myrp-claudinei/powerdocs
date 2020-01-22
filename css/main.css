@@ -424,3 +424,44 @@ ul.CTAs {
 .tooltip.bs-tooltip-top .arrow:before {
   border-top-color: #FFC107 !important
 }
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline>li {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+
+ul.timeline>li:before {
+  content: ' ';
+  background: #FFC107;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+  margin-top: 15px;
+}
+
+.ocorrencias .modal-dialog {
+  max-width: 1140px;
+}
