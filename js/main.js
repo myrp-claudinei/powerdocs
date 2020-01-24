@@ -1,7 +1,13 @@
-$('#sidebarCollapse').on('click', function () {
-    $('#sidebar').toggleClass('active');
-    $('.sidebar-header h4').toggleClass('hide');
-    $('#sidebar span').toggleClass('hide');
+$('#sidebar').hover(function () {
+    $('#sidebar').removeClass('active');
+    $('.sidebar-header h4').removeClass('invisible');
+    $('#sidebar span').removeClass('invisible');
+});
+
+$('#sidebar').mouseleave(function () {
+    $('#sidebar').addClass('active');
+    $('.sidebar-header h4').addClass('invisible');
+    $('#sidebar span').addClass('invisible');
 });
 
 $('ul ul a').click( function(){

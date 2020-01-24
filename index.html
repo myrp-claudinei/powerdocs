@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="active">
             <button type="button" id="sidebarCollapse" class="btn btn-info shadow-sm bg-white">
                 <i class="la la-angle-left"></i>
             </button>
@@ -22,20 +22,20 @@
                 <div class="logo_icon">
                     Inventti
                 </div>
-                <h4>Power Docs</h4>
+                <h4 class="invisible">Power Docs</h4>
             </div>
 
             <ul class="list-unstyled components">
                 <li>
                     <a href="#">
                         <i class="la la-tachometer-alt"></i>
-                        <span>Dashboard</span>
+                        <span class="invisible">Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="#emsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="la la-file-upload"></i>
-                        <span>Emissão</span>
+                        <span class="invisible">Emissão</span>
                     </a>
                     <ul class="collapse list-unstyled" id="emsSubmenu">
                         <li>
@@ -61,7 +61,7 @@
                 <li>
                     <a href="#recSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="la la-file-download"></i>
-                        <span>Recebimento</span>
+                        <span class="invisible">Recebimento</span>
                     </a>
                     <ul class="collapse list-unstyled" id="recSubmenu">
                         <li>
@@ -84,8 +84,12 @@
                         </li>
                     </ul>
                 </li>
+                <li class="fixed-bottom w-100">
+                    <a class="float-left" href="#"><i class="la la-headset"></i></a>
+                    <a class="float-right" href="#"><i class="la la-info"></i></a>
+                </li>
             </ul>
-            <div class="navbar navbar-expand-lg fixed-bottom">
+            <!-- <div class="navbar navbar-expand-lg fixed-bottom">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a href="#"><i class="la la-headset"></i></a>
@@ -94,7 +98,7 @@
                         <a href="#"><i class="la la-info"></i></a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </nav>
         <!-- Page Content  -->
         <div class="container-fluid">
@@ -267,7 +271,8 @@
                                             <div class="dropdown-menu shadow" aria-labelledby="dropdownMenuLink">
                                                 <a class="dropdown-item" data-toggle="modal"
                                                     data-target=".detalhe-nota">Visualizar</a>
-                                                <a class="dropdown-item" href="#">Inutilizar</a>
+                                                <a class="dropdown-item" data-toggle="modal" data-target=".inutilizar"
+                                                    href="#">Inutilizar</a>
                                                 <a class="dropdown-item" data-toggle="modal" data-target=".ocorrencias"
                                                     href="#">Ver ocorrências</a>
                                             </div>
@@ -743,38 +748,84 @@
                                                 <div class="col-md-6">
                                                     <ul class="timeline">
                                                         <li class="border rounded p-3">
-                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <small class="text-secondary float-right">22/01/2020 -
+                                                                09:45</small>
                                                             <h6>Rejeitada</h6>
-                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <small class="text-warning">Emissor não habilitado para
+                                                                emissão da NF-e</small>
                                                             <a href="#" class="text-warning float-right">INUTILIZAR</a>
-                                                        </li>                                
+                                                        </li>
                                                         <li class="border rounded p-3">
-                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <small class="text-secondary float-right">22/01/2020 -
+                                                                09:45</small>
                                                             <h6>Rejeitada</h6>
-                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <small class="text-warning">Emissor não habilitado para
+                                                                emissão da NF-e</small>
                                                             <a href="#" class="text-warning float-right">INUTILIZAR</a>
-                                                        </li>                                
+                                                        </li>
                                                         <li class="border rounded p-3">
-                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <small class="text-secondary float-right">22/01/2020 -
+                                                                09:45</small>
                                                             <h6>Rejeitada</h6>
-                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <small class="text-warning">Emissor não habilitado para
+                                                                emissão da NF-e</small>
                                                             <a href="#" class="text-warning float-right">INUTILIZAR</a>
-                                                        </li>                                
+                                                        </li>
                                                         <li class="border rounded p-3">
-                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <small class="text-secondary float-right">22/01/2020 -
+                                                                09:45</small>
                                                             <h6>Rejeitada</h6>
-                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <small class="text-warning">Emissor não habilitado para
+                                                                emissão da NF-e</small>
                                                             <a href="#" class="text-warning float-right">INUTILIZAR</a>
-                                                        </li>                                
+                                                        </li>
                                                         <li class="border rounded p-3">
-                                                            <small class="text-secondary float-right">22/01/2020 - 09:45</small>
+                                                            <small class="text-secondary float-right">22/01/2020 -
+                                                                09:45</small>
                                                             <h6>Rejeitada</h6>
-                                                            <small class="text-warning">Emissor não habilitado para emissão da NF-e</small>
+                                                            <small class="text-warning">Emissor não habilitado para
+                                                                emissão da NF-e</small>
                                                             <a href="#" class="text-warning float-right">INUTILIZAR</a>
-                                                        </li>                                
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade inutilizar" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h4 class="modal-title d-inline" id="myLargeModalLabel">Inutilizar
+                                                        NF-e</h4>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Motivo</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="float-right">
+                                            <button type="submit" class="btn btn-light">Cancelar</button>
+                                            <button type="submit" class="btn btn-primary">Inutilizar</button>
                                         </div>
                                     </div>
                                 </div>
