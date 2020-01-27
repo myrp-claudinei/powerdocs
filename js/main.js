@@ -1,7 +1,10 @@
+//$('#sidebar').hover(function () {
+    //$('#sidebar').removeClass('active');
+    //$('.sidebar-header h4').removeClass('invisible');
+   //$('#sidebar span').removeClass('invisible');
+//});
 $('#sidebar').hover(function () {
-    $('#sidebar').removeClass('active');
-    $('.sidebar-header h4').removeClass('invisible');
-    $('#sidebar span').removeClass('invisible');
+    $(this).removeClass('active');
 });
 
 $('#sidebar').mouseleave(function () {
