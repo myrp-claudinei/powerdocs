@@ -22,20 +22,20 @@
                 <div class="logo_icon">
                     Inventti
                 </div>
-                <h4 class="invisible">Power Docs</h4>
+                <h4 class="d-none">Power Docs</h4>
             </div>
 
             <ul class="list-unstyled components">
                 <li>
                     <a href="#">
                         <i class="la la-tachometer-alt"></i>
-                        <span class="invisible">Dashboard</span>
+                        <span class="d-none">Dashboard</span>
                     </a>
                 </li>
                 <li>
                     <a href="#emsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="la la-file-upload"></i>
-                        <span class="invisible">Emissão</span>
+                        <span class="d-none">Emissão</span>
                     </a>
                     <ul class="collapse list-unstyled" id="emsSubmenu">
                         <li>
@@ -61,7 +61,7 @@
                 <li>
                     <a href="#recSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="la la-file-download"></i>
-                        <span class="invisible">Recebimento</span>
+                        <span class="d-none">Recebimento</span>
                     </a>
                     <ul class="collapse list-unstyled" id="recSubmenu">
                         <li>
@@ -85,20 +85,10 @@
                     </ul>
                 </li>
                 <li class="fixed-bottom w-100">
-                    <a class="float-left" href="#"><i class="la la-headset"></i></a>
-                    <a class="float-right" href="#"><i class="la la-info"></i></a>
+                    <a class="float-left suporte text-center w-100" href="#"><i class="la la-headset"></i></a>
+                    <a class="float-right sobre text-center w-100" href="#"><i class="la la-info"></i></a>
                 </li>
-            </ul>
-            <!-- <div class="navbar navbar-expand-lg fixed-bottom">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a href="#"><i class="la la-headset"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#"><i class="la la-info"></i></a>
-                    </li>
-                </ul>
-            </div> -->
+            </ul>           
         </nav>
         <!-- Page Content  -->
         <div class="container-fluid">
@@ -753,7 +743,9 @@
                                                             <h6>Rejeitada</h6>
                                                             <small class="text-warning">Emissor não habilitado para
                                                                 emissão da NF-e</small>
-                                                            <a href="#" class="text-warning float-right" data-toggle="modal" data-dismiss="modal" data-target=".inutilizar">INUTILIZAR</a>
+                                                            <a href="#" class="text-warning float-right"
+                                                                data-toggle="modal" data-dismiss="modal"
+                                                                data-target=".inutilizar">INUTILIZAR</a>
                                                         </li>
                                                         <li class="border rounded p-3">
                                                             <small class="text-secondary float-right">22/01/2020 -
@@ -761,7 +753,9 @@
                                                             <h6>Rejeitada</h6>
                                                             <small class="text-warning">Emissor não habilitado para
                                                                 emissão da NF-e</small>
-                                                            <a href="#" class="text-warning float-right" data-toggle="modal" data-dismiss="modal" data-target=".inutilizar">INUTILIZAR</a>
+                                                            <a href="#" class="text-warning float-right"
+                                                                data-toggle="modal" data-dismiss="modal"
+                                                                data-target=".inutilizar">INUTILIZAR</a>
                                                         </li>
                                                         <li class="border rounded p-3">
                                                             <small class="text-secondary float-right">22/01/2020 -
@@ -769,7 +763,9 @@
                                                             <h6>Rejeitada</h6>
                                                             <small class="text-warning">Emissor não habilitado para
                                                                 emissão da NF-e</small>
-                                                            <a href="#" class="text-warning float-right" data-toggle="modal" data-dismiss="modal" data-target=".inutilizar">INUTILIZAR</a>
+                                                            <a href="#" class="text-warning float-right"
+                                                                data-toggle="modal" data-dismiss="modal"
+                                                                data-target=".inutilizar">INUTILIZAR</a>
                                                         </li>
                                                         <li class="border rounded p-3">
                                                             <small class="text-secondary float-right">22/01/2020 -
@@ -777,7 +773,9 @@
                                                             <h6>Rejeitada</h6>
                                                             <small class="text-warning">Emissor não habilitado para
                                                                 emissão da NF-e</small>
-                                                            <a href="#" class="text-warning float-right" data-toggle="modal" data-dismiss="modal" data-target=".inutilizar">INUTILIZAR</a>
+                                                            <a href="#" class="text-warning float-right"
+                                                                data-toggle="modal" data-dismiss="modal"
+                                                                data-target=".inutilizar">INUTILIZAR</a>
                                                         </li>
                                                         <li class="border rounded p-3">
                                                             <small class="text-secondary float-right">22/01/2020 -
@@ -785,7 +783,9 @@
                                                             <h6>Rejeitada</h6>
                                                             <small class="text-warning">Emissor não habilitado para
                                                                 emissão da NF-e</small>
-                                                            <a href="#" class="text-warning float-right" data-toggle="modal" data-dismiss="modal" data-target=".inutilizar">INUTILIZAR</a>
+                                                            <a href="#" class="text-warning float-right"
+                                                                data-toggle="modal" data-dismiss="modal"
+                                                                data-target=".inutilizar">INUTILIZAR</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -817,9 +817,10 @@
                                         <div class="container-fluid">
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Motivo</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Especifique o motivo da inutilização do documento..."
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    placeholder="Especifique o motivo da inutilização do documento..."
                                                     rows="3"></textarea>
-                                            </div>                                            
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
