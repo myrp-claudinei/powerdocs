@@ -476,3 +476,24 @@ ul.timeline>li:before {
 .table-hover tbody tr:hover {
   background-color: rgba(46, 61, 69, 0.05) !important
 }
+
+.empty-search {
+  background: url(../img/empty-search.png) no-repeat;
+  height: 350px;
+  text-indent: -9999px;
+  width: 350px
+}
+
+.empty-user {
+  background: url(../img/usuario-parametrizado.png) no-repeat;
+  height: 350px;
+  text-indent: -9999px;
+  width: 350px
+}
+
+.empty-not-found {
+  background: url(../img/nada-enc.png) no-repeat;
+  height: 350px;
+  text-indent: -9999px;
+  width: 350px
+}
