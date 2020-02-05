@@ -101,10 +101,18 @@
                     </ol>
                 </nav>
                 <div>
-                    <a href=""><i class="las la-bell"></i></a>
-                    <a href=""><i class="las la-user"></i></a>
-                    <a href=""><i class="las la-cog"></i></a>
+                    <div class="dropdown user show">
+                        <a class="btn btn-link dropdown-toggle text-dark" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe <i class="las la-user-circle align-middle"></i>
+                        </a>
 
+                        <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item text-dark" href="#"><i class="las la-building mr-3"></i> Alterar empresa</a>                            
+                            <a class="dropdown-item text-dark" href="#"><i class="las la-cog mr-3"></i> Configurações</a>
+                            <hr>
+                            <a class="dropdown-item text-dark" href="#"><i class="las la-sign-out-alt mr-3"></i> Sair</a>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="card">

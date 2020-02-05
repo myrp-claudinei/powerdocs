@@ -497,3 +497,8 @@ ul.timeline>li:before {
   text-indent: -9999px;
   width: 350px
 }
+
+.dropdown.user a i {
+  font-size: 1.2em!important;
+  vertical-align: middle;
+}
