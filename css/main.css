@@ -387,8 +387,12 @@ ul.CTAs {
   background-color: #efefef !important
 }
 
-.modal-header {
+/* .modal-header {
   padding: 0.25rem 0.10rem !important
+} */
+
+.modal-content {
+  box-shadow: 0px 10px 10px #00000030!important;
 }
 
 .card-header {
@@ -469,7 +473,6 @@ ul.timeline>li:before {
 }
 
 .modal-dialog {
-  box-shadow: 0px 10px 10px #00000030;
   border-radius: 5px
 }
 
