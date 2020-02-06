@@ -509,3 +509,17 @@ ul.timeline>li:before {
   font-size: 1.2em!important;
   vertical-align: middle;
 }
+
+.page-item.active .page-link {
+  color: white !important;
+  background-color: #2FB9D0 !important;
+  border: 1px solid #DEE2E6 !important;
+}
+
+.table-data {
+  max-width: 20px;
+}
+.table-data-center {
+   width: 100px;
+   text-align: center;
+}
