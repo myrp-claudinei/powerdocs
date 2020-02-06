@@ -498,6 +498,13 @@ ul.timeline>li:before {
   width: 350px
 }
 
+.empty-forbidden {
+  background: url(../img/nao-permitido.png) no-repeat;
+  height: 350px;
+  text-indent: -9999px;
+  width: 350px
+}
+
 .dropdown.user a i {
   font-size: 1.2em!important;
   vertical-align: middle;
